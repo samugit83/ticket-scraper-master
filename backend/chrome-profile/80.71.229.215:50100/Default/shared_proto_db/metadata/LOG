@@ -1,0 +1,14 @@
+2024/10/08-18:56:12.205 5bb2a Recovering log #75
+2024/10/08-18:56:12.206 5bb2a Level-0 table #77: started
+2024/10/08-18:56:12.213 5bb2a Level-0 table #77: 124 bytes OK
+2024/10/08-18:56:12.227 5bb2a Delete type=3 #73
+2024/10/08-18:56:12.227 5bb2a Delete type=0 #75
+2024/10/08-18:56:12.227 5bb2a Compacting 4@0 + 1@1 files
+2024/10/08-18:56:12.240 5bb2a Generated table #79@0: 18 keys, 290 bytes
+2024/10/08-18:56:12.240 5bb2a Compacted 4@0 + 1@1 files => 290 bytes
+2024/10/08-18:56:12.243 5bb2a compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/08-18:56:12.248 5bb2a Delete type=2 #68
+2024/10/08-18:56:12.250 5bb2a Delete type=2 #77
+2024/10/08-18:56:12.250 5bb2a Delete type=2 #74
+2024/10/08-18:56:12.254 5bb2a Delete type=2 #66
+2024/10/08-18:56:12.254 5bb2a Delete type=2 #71

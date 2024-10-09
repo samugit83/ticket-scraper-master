@@ -1,0 +1,294 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+ 
+
+@layer base {
+  
+  :root {
+    --background: 0 0% 100%; /* white */
+    --backgroundsec: 0 0% 93%; /* almost white */
+    --foreground: 136 0% 24%; /* black */
+    
+    --primary: 198 93 60%;  /* celeste */
+    --primary-foreground: 0 0% 100%; 
+
+    --secondary: 234 89 74%;  /* violetto */
+    --tertiary: 270 95 75%;  /* magenta */
+    --quaternary: 292 91 73%; /* magenta brillante */
+    --quinary: 188 86 53%; /* ciano */
+
+    --muted: 210 40% 96.1%; 
+    --muted-foreground: 215.4 16.3% 46.9%; 
+ 
+    --popover: 0 0% 100%; 
+    --popover-foreground: 222.2 47.4% 11.2%; 
+ 
+    --border: 214.3 31.8% 91.4%;  
+    --input: 214.3 31.8% 91.4%;
+ 
+    --card: 0 0% 100%;  
+    --card-foreground: 222.2 47.4% 11.2%; 
+
+    --success: 129 100% 36%; /* verde brillante*/
+    --destructive: 0 100% 50%;  /* rosso accesso */
+
+    --accent: 210 40% 96.1%; /* grigio chiarissimo quasi bianco, sul celeste */
+    --accent-foreground: 222.2 47.4% 11.2%; /* nero */
+
+    --destructive-foreground: 210 40% 98%; /* grigio chiarissimo quasi bianco, sul celeste */
+ 
+    --ring: 215 20.2% 65.1%;  /* grigio scuro sul celeste */
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 7%;  /* almost black */
+    --backgroundsec: 0 0% 0%;  /* black */
+    --foreground: 0 0% 100%; /* white */
+    --foregroundsec: 0 0% 93%; /* almost white */
+
+    --primary: 198 93 60%;  /* celeste */
+    --secondary: 234 89 74%;  /* violetto */
+    --tertiary: 270 95 75%;  /* magenta */
+    --quaternary: 292 91 73%; /* magenta brillante */
+    --quinary: 188 86 53%; /* ciano */
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+ 
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+ 
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+ 
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+ 
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 216 34% 17%;
+ 
+    --radius: 0.5rem;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 222, 236)
+}
+
+
+/* Optional: Style the scrollbar track and handle */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
+
+
+@keyframes expandHeight {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes expandWidth {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+.signin-parent-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100vw;
+  background-color: #ecf0f3;
+}
+
+.signin-container {
+  width: 400px;
+  height: 580px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  animation: fadeIn 3s ease forwards;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-container-reset {
+  width: 350px;
+  height: 370px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  animation: fadeIn 3s ease forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.signin-logo-container {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.signin-logo {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin-inputs {
+  text-align: left;
+  margin-top: 30px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.signin-inputs label {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.signin-inputs input,
+.signin-inputs select,
+.signin-inputs button {
+  display: block;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  color: grey;
+  text-align: center;
+}
+
+
+
+.signin-inputs select {
+  -webkit-appearance: none; /* Remove default arrow icon on Chrome/Safari */
+  -moz-appearance: none; /* Remove default arrow icon on Firefox */
+  appearance: none; /* Remove default arrow icon */
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+
+.signin-inputs select:hover {
+  background-color: #ffffff;
+}
+
+
+
+.signin-inputs input::placeholder {
+  color: gray;
+}
+
+
+.signin-inputs select,
+.signin-inputs input {
+  background: #ecf0f3;
+  padding: 10px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+
+.signin-confirm {
+  width: 50%
+}
+
+.signin-inputs button {
+  color: white;
+  margin-top: 20px;
+  background: #2953A9;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.signin-inputs button:hover {
+  box-shadow: none;
+  background: #48BA82;
+
+}
+
+.button-forgot {
+  margin-top: 20px;
+  background: #ecf0f3;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  color: grey;
+}
+
+

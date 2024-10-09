@@ -1,0 +1,14 @@
+2024/10/08-21:41:01.099 5cb3d Recovering log #101
+2024/10/08-21:41:01.102 5cb3d Level-0 table #103: started
+2024/10/08-21:41:01.113 5cb3d Level-0 table #103: 124 bytes OK
+2024/10/08-21:41:01.130 5cb3d Delete type=0 #101
+2024/10/08-21:41:01.130 5cb3d Delete type=3 #99
+2024/10/08-21:41:01.131 5cb3d Compacting 4@0 + 1@1 files
+2024/10/08-21:41:01.150 5cb3d Generated table #105@0: 18 keys, 290 bytes
+2024/10/08-21:41:01.151 5cb3d Compacted 4@0 + 1@1 files => 290 bytes
+2024/10/08-21:41:01.155 5cb3d compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/08-21:41:01.157 5cb3d Delete type=2 #100
+2024/10/08-21:41:01.157 5cb3d Delete type=2 #94
+2024/10/08-21:41:01.157 5cb3d Delete type=2 #97
+2024/10/08-21:41:01.157 5cb3d Delete type=2 #92
+2024/10/08-21:41:01.157 5cb3d Delete type=2 #103

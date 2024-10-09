@@ -1,0 +1,8 @@
+[
+    {
+      "name": "start prod server",
+      "script": "npx",
+      "args": "next start",
+      "cwd": "/home/ubuntu/ticket-scraper/webapp"  
+    }
+]

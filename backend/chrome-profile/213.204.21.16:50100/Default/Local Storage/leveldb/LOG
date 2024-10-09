@@ -1,0 +1,5 @@
+2024/10/08-21:41:00.973 5cb68 Recovering log #70
+2024/10/08-21:41:00.985 5cb68 Level-0 table #72: started
+2024/10/08-21:41:00.989 5cb68 Level-0 table #72: 233 bytes OK
+2024/10/08-21:41:01.001 5cb68 Delete type=0 #70
+2024/10/08-21:41:01.001 5cb68 Delete type=3 #68
