@@ -40,8 +40,7 @@ This system is architected with a **master server** and multiple **node servers*
 - **Database**: MongoDB
 - **Queue Service**: Amazon SQS
 - **Monitoring**: Amazon CloudWatch
-- **Hosting**: [AWS EC2]
-
+- **Hosting**: [AWS EC2 t3a.small for master, t3a.medium for nodes]
 
 
 
@@ -54,7 +53,7 @@ pm2 start pm2-config.json
 su ~/ticket-scraper/webapp
 
 ### Webapp live su:
-http://15.161.113.79/event-search
+http://18.102.166.102/event-search
 
 
 ### List of active services:
