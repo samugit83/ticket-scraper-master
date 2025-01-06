@@ -10,7 +10,7 @@ export const general_params: GeneralParamsTypes = {
         dpp: 60000000
       }
     },
-    defaultEmailList: ['Peppev85@me.com', 'antoguerra74@gmail.com', 'luigi.degregorio2002@gmail.com'],
+    defaultEmailList: [],
     defaultPhoneList: []
 };
 
